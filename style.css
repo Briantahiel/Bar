@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.brand{
+    background-image: url("./Img/logo1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80px;
+    filter: invert(100%);
+}
+/*//////////MENU///////////*/
+menu{
+    background-color: black;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    height: 80px;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+    line-height: 80px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 2px;
+    transition: 0.8s;
+
+}
+.styled-li a:hover{
+    color: goldenrod;
+}
+
+li{
+    list-style: none;
+    margin-right: 10px;
+}
+
+menu ul{
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+/*//////////HEADER///////////*/
+
+header .headerImg{
+    position: relative;
+    background-image: url("./Img/bar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    height: 100vh;
+    opacity: 0.4;
+}
+header{
+    background-color: black;
+    height: 100vh;
+}
+.text{
+    position: relative;
+    text-align: center;
+    color: white;
+    line-height: 80px;
+    bottom: 70%;
+}
+h1{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+h4{
+    font-family: 'Satisfy', cursive;
+    color: goldenrod;
+    font-weight: 200;
+    font-size: 2rem;
+}
+p{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 3rem;
+}
+
+/*//////////HEADER FOOTER///////////*/
+
+.headerFooter{
+    text-align: center;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.headerFooter a{
+    color: black;
+    margin: 20px auto;
+    padding: 0 10px;
+    border-radius: 45%;
+    background-color: rgb(230, 182, 63);
+    font-size: 1.1rem;
+}
+.headerFooter a:hover{
+    background-color:goldenrod;
+}
+
+h2{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 5.5rem;
+    font-weight: 100; 
+}
+
+p{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.5rem;  
+}
+
+/*//////////ABOUT///////////*/
+.aboutContainer{
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+    background-color: goldenrod;
+    height: 100vh;
+}
+.aboutText{
+    text-align: center;
+    height: 100vh;
+    width: 50%;
+    float: right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aboutText p{
+    margin: 0 20px 0 20px;
+}
+.aboutImage{
+    background-image: url("./Img/bar1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    float: right;
+    height: 100vh;
+}
+.aboutText h4{
+    font-family: 'Satisfy', cursive;
+    color: white;
+    font-size: 1.3rem;
+}
+
+/*//////////SECTION MENU CARDS///////////*/
+.menuCards{
+    display: flex;
+    opacity: 0.9;
+}
+.card-1{
+    background-image: url("./Img/food1.jpg");
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card-2{
+    background-image: url("./Img/food2.jpg");
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card-3{
+    background-image: url("./Img/food3.jpg");
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*//////////SECTION FORM///////////*/
+textarea{
+    resize: none;
+    height: 100px;
+    width: 302px;
+}
+.form{
+    opacity: 0.8;
+    margin: auto;
+
+}
+form{
+    margin: 0 auto;
+    width: 300px;
+    padding: 20px;
+
+}
+.form h2{
+    text-align: center;
+}
+input{
+    width: 300px;
+    margin-bottom: 15px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    height: 20px;
+    font-size: 1.1rem;
+}
+input[type = button]{
+    width: 304px;
+    height: 50px;
+    background-color: rgb(230, 182, 63);
+    border: none;
+    cursor: pointer;
+}
+input[type = button]:hover{
+   background-color: goldenrod;
+}
+
+/*//////////FOOTER///////////*/
+
+.footer{
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.rights{
+    text-align: center;
+    position: relative;
+    bottom: -50px;
+}
+/*//////////MENU MODAL///////////*/
+.menuContainer{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100vh;
+
+}
+.menuContent{
+    background-color: white;
+
+    width:100%;
+    height: 190vh;
+    margin-top: 80px;
+}
+.menuContent a{
+    background-color: white;
+}
+.menuContent a:hover{
+    background-color: white;
+}
+.menuFood{
+    position: absolute;
+
+
+    top:0;
+    width: 100%;
+    display: none;
+    pointer-events:none;
+    transition: all 1s;
+  }
+#menuFood:target{
+    display: block;
+    z-index: 1000;
+    pointer-events:auto;
+  }
+@media screen and (max-width: 1200px) {
+    .aboutText{
+        width: 100%;
+        height: 50vh;
+    }
+    .aboutImage{
+        width: 100%;
+        height: 50vh;
+    }
+}
+@media screen and (max-width: 800px) {
+    h2{
+        font-size: 3.5rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .menuCards{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    form{
+        text-align: center;
+        width: 250px;
+    }
+    textarea{
+        width: 202px;
+    }
+    input{
+        width: 200px;
+    }
+    input[type=button]{
+        width: 204px;
+    }
+
+}
